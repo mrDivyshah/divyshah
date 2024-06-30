@@ -32,14 +32,14 @@ export default function Home() {
   };
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 2000); // Change image every 2 seconds
-
+  
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
+  
 
   return (
     <main className=" light:bg-white dark:bg-black shadow-inner shadow-lg shadow-slate-900 box-border overflow-hidden box-border w-full flex flex-col gap-5">
@@ -130,7 +130,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col justify-center items-center text-center xl:text-left">
-          <p className="text-lg font-semibold">Hello, I'm</p>
+          <p className="text-lg font-semibold">Hello, I&apos;m</p>
           <h1 className="text-4xl md:text-6xl font-bold">Divy Shah</h1>
           <p className="text-xl font-bold md:text-2xl my-4">Android & Web Developer</p>
           <div className="flex justify-center md:justify-start gap-4 mt-2">
@@ -244,7 +244,7 @@ export default function Home() {
             <div className="text-container">
               <p>
                 I am the design dynamo ready to bring your graphics and web
-                dreams to life! Work with me, and together, let's bring our
+                dreams to life! Work with me, and together, let&apos;s bring our
                 creative visions to reality!
               </p>
             </div>
