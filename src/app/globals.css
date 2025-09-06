@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme{
+  --font-ovo: "Ovo", serif;
+  --bg-lightHover: "#fcf4ff"
+}
+
+.donr{
+  font-family: Outfit;
+}
