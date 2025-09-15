@@ -42,7 +42,7 @@ export const tools = [
 const About = () => {    
     return (
         <motion.div id="about" className="w-full px-[12%] py-10 scroll-mt-20"
-        transition={{duration: 2}}
+        transition={{duration: 1}}
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}        
         >
