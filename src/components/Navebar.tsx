@@ -47,7 +47,7 @@ const Navebar = () => {
             </ul>
             <div className="flex items-center gap-6">
                 <GoMoon className="text-2xl"/>
-            <a href="" className="hidden md:flex justify-center items-center gap-2 border border-gray-500 rounded-full px-10 py-2.5" >Contact  Me <GoArrowUpRight className="text-2xl"/></a>
+            <a href="#contact" className="hidden md:flex justify-center items-center gap-2 border border-gray-500 rounded-full px-10 py-2.5" >Contact  Me <GoArrowUpRight className="text-2xl"/></a>
             <button className="block md:hidden" onClick={openMenu}>
                 <MdMenu className="text-2xl"/>
             </button>
@@ -58,10 +58,10 @@ const Navebar = () => {
     <CgClose />
 </button>
                     <li><a href="#top" onClick={closeMenu} className="font-ovo">Home</a></li>
-                    <li><a href="" onClick={closeMenu} className="font-ovo">About</a></li>
-                    <li><a href="" onClick={closeMenu} className="font-ovo">Services</a></li>
-                    <li><a href="" onClick={closeMenu} className="font-ovo">My Work</a></li>
-                    <li><a href="" onClick={closeMenu} className="font-ovo">Contact  Me</a></li>
+                    <li><a href="#about" onClick={closeMenu} className="font-ovo">About</a></li>
+                    <li><a href="#services" onClick={closeMenu} className="font-ovo">Services</a></li>
+                    <li><a href="#work" onClick={closeMenu} className="font-ovo">My Work</a></li>
+                    <li><a href="#contact" onClick={closeMenu} className="font-ovo">Contact  Me</a></li>
                 </ul>
         </nav>
         </>
