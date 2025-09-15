@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { BiArrowFromRight, BiRightArrow } from "react-icons/bi";
 import { GoArrowRight, GoDownload } from "react-icons/go";
@@ -31,10 +32,20 @@ const Header = () => {
                 I’m a passionate Shopify, Next.js, and Flutter developer from Gujarat, India, with experience building custom web apps, mobile apps, and e-commerce solutions. I’ve worked with companies like DB Aasediay Jewelers and also as a freelancer, designing and developing Shopify stores, automation tools, and business management solutions.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                <button className="flex gap-3 items-center rounded-full bg-black text-white px-10 py-3">
+                
+                <button  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  }}
+   className="flex gap-3 items-center rounded-full bg-black text-white px-10 py-3 hover:cursor-pointer">
                     Contact me <GoArrowRight className="text-xl" />
                 </button>
-                <button className="flex gap-3 items-center px-10 py-3 border rounded-full border-gray-500">my resume <GoDownload /></button>
+                 <a
+    href="/Divy shah.MCA.2026.pdf"
+    download
+    className="flex gap-3 items-center px-10 py-3 border rounded-full border-gray-500"
+  >
+    Download Resume <GoArrowRight className="text-xl" />
+  </a>
             </div>
         </div>
     );
