@@ -1,8 +1,11 @@
+'use client'
 import Image from "next/image";
 import { BsStackOverflow } from "react-icons/bs";
 import { FaCode, FaGraduationCap } from "react-icons/fa6";
 import { GoBook, GoCode } from "react-icons/go";
 import { LuGraduationCap } from "react-icons/lu";
+import { motion } from "motion/react"
+
 export const infilist = [
     {
         icon: <FaCode className="text-4xl mt-3"/>,
@@ -38,7 +41,11 @@ export const tools = [
 
 const About = () => {    
     return (
-        <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
+        <motion.div id="about" className="w-full px-[12%] py-10 scroll-mt-20"
+        transition={{duration: 2}}
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}        
+        >
             <h4 className="text-center mb-2 text-lg font-ovo ">Introduction</h4>
             <h2 className="text-center text-5xl font-ovo">About me</h2>
             <div className="flex">
@@ -82,7 +89,7 @@ const About = () => {
                 </div>
 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
