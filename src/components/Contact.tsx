@@ -35,7 +35,7 @@ const Contact = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
 
-        <div className="flex gap-5 justify-center m-5 mt-14">
+        <div className="flex gap-5 flex-wrap lg:flex-nowrap justify-center m-5 mt-14">
           <button
             onClick={handleWhatsApp}
             className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-transparent text-black outline-1 rounded-full mx-auto hover:bg-blue-600/10 duration-500 hover:cursor-pointer"
